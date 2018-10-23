@@ -1,0 +1,31 @@
+{
+  "name": "sricogroup/persianWorkdays",
+  "description": "Persian Work Days",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Amin Jafari",
+      "email": "jafari1989@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "hekmatinasser/notowo": "^1.0",
+    "hekmatinasser/verta": "^1.9",
+    "illuminate/support": "~5"
+  },
+  "require-dev" : {},
+  "minimum-stability": "dev",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sricogroup\\Persianworkdays\\PersianWorkdaysProvider"
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Sricogroup\\Persianworkdays\\": "src/"
+    }
+  }
+}
