@@ -10,7 +10,6 @@
   ],
   "require": {
     "php": ">=7.1",
-    "hekmatinasser/notowo": "^1.0",
     "hekmatinasser/verta": "^1.9",
     "illuminate/support": "~5"
   },
