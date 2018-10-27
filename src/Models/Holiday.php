@@ -6,7 +6,7 @@
  * Time: 9:53 AM
  */
 
-namespace PersianWorkdays\Models;
+namespace Persianworkdays\Models;
 
 
 use Hekmatinasser\Verta\Verta;

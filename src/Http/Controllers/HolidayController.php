@@ -6,13 +6,13 @@
  * Time: 9:42 AM
  */
 
-namespace PersianWorkdays\Http\Controllers;
+namespace Persianworkdays\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use PersianWorkdays\Http\Requests\HolidayRequest;
-use PersianWorkdays\Services\Holidays\Backend\HolidayServices;
+use Persianworkdays\Http\Requests\HolidayRequest;
+use Persianworkdays\Services\Holidays\Backend\HolidayServices;
 
 class HolidayController extends Controller
 {
@@ -34,12 +34,12 @@ class HolidayController extends Controller
     public function index(Request $request)
     {
         $holidays = $this->holidayServices->paginate($request);
-        return view('PersianWorkdays::holiday.index', compact('holidays'));
+        return view('Persianworkdays::holiday.index', compact('holidays'));
     }
 
     public function create()
     {
-        return view('PersianWorkdays::holiday.create');
+        return view('Persianworkdays::holiday.create');
     }
 
     public function store(HolidayRequest $request)
@@ -52,7 +52,7 @@ class HolidayController extends Controller
     public function edit($id)
     {
         $holiday = $this->holidayServices->find($id);
-        return view('PersianWorkdays::holiday.edit', compact('holiday'));
+        return view('Persianworkdays::holiday.edit', compact('holiday'));
     }
 
     public function update(HolidayRequest $request, $id)

@@ -1,6 +1,6 @@
 <?php
 
-namespace PersianWorkdays\Http\Requests;
+namespace Persianworkdays\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

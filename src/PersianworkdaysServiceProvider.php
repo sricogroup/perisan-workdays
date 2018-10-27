@@ -6,20 +6,20 @@
  * Time: 9:38 AM
  */
 
-namespace PersianWorkdays;
+namespace Persianworkdays;
 
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
-class PersianWorkdaysServiceProvider extends ServiceProvider
+class PersianworkdaysServiceProvider extends ServiceProvider
 {
 
     public function boot()
     {
         Schema::defaultStringLength(191);
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
-        $this->loadViewsFrom(__DIR__ . '/./../resources/views', 'PersianWorkdays');
+        $this->loadViewsFrom(__DIR__ . '/./../resources/views', 'Persianworkdays');
     }
 
     public function register()
