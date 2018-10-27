@@ -12,7 +12,7 @@ namespace PersianWorkdays;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
-class PersianWorkdaysServiceProvider extends ServiceProvider
+class PersianworkdaysServiceProvider extends ServiceProvider
 {
 
     public function boot()
