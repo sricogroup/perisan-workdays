@@ -18,7 +18,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Sricogroup\\Persianworkdays\\PersianWorkdaysProvider"
+        "Sricogroup\\Persianworkdays\\PersianWorkdaysServiceProvider"
       ]
     }
   },
