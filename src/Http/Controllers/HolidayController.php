@@ -34,8 +34,6 @@ class HolidayController extends Controller
 
     public function index(Request $request)
     {
-
-        dd(PWorkdays::nextDays(4));
         $holidays = $this->holidayServices->paginate($request);
         return view('PersianWorkdays::holiday.index', compact('holidays'));
     }
