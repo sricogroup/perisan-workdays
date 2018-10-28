@@ -6,10 +6,10 @@
  * Time: 11:48 AM
  */
 
-namespace PersianWorkdays\Services\Holidays\Frontend;
+namespace Persianworkdays\Services\Holidays\Frontend;
 
 
-use PersianWorkdays\Models\Holiday;
+use Persianworkdays\Models\Holiday;
 
 class HolidayServices
 {

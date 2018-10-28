@@ -6,7 +6,7 @@
  * Time: 1:38 PM
  */
 
-namespace PersianWorkdays\Facades;
+namespace Persianworkdays\Facades;
 
 
 use Illuminate\Support\Facades\Facade;

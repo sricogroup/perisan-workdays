@@ -6,7 +6,7 @@
  * Time: 9:38 AM
  */
 
-namespace PersianWorkdays;
+namespace Persianworkdays;
 
 
 use Illuminate\Support\Facades\Schema;

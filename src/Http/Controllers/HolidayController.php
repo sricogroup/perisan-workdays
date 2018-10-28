@@ -6,13 +6,13 @@
  * Time: 9:42 AM
  */
 
-namespace PersianWorkdays\Http\Controllers;
+namespace Persianworkdays\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use PersianWorkdays\Http\Requests\HolidayRequest;
-use PersianWorkdays\Services\Holidays\Backend\HolidayServices;
+use Persianworkdays\Http\Requests\HolidayRequest;
+use Persianworkdays\Services\Holidays\Backend\HolidayServices;
 
 class HolidayController extends Controller
 {
