@@ -12,6 +12,7 @@ namespace Persianworkdays\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Persianworkdays\Http\Requests\HolidayRequest;
+use Persianworkdays\PWorkdays;
 use Persianworkdays\Services\Holidays\Backend\HolidayServices;
 
 class HolidayController extends Controller
@@ -33,6 +34,8 @@ class HolidayController extends Controller
 
     public function index(Request $request)
     {
+
+        dd(PWorkdays::nextDays(4));
         $holidays = $this->holidayServices->paginate($request);
         return view('PersianWorkdays::holiday.index', compact('holidays'));
     }

@@ -23,7 +23,7 @@ class Holiday extends Model
         $this->attributes['date'] = Verta::parse($value)->formatGregorian('Y-m-d');
     }
 
-    public function getDateAttribute($value)
+    public function getVertaDateAttribute($value)
     {
         return \verta($value)->formatDate();
     }

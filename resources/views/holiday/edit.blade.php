@@ -22,7 +22,7 @@
             </div>
             <div class="label-input">
                 {!! Form::label('date','تاریخ', ['class' => 'pull-right']) !!}
-                {{ Form::text('date', old('date'), ['required', 'data-parsley-trigger'=>'change', 'dir'=>'ltr']) }}
+                {{ Form::text('date', old('date', $holiday->vertaDate), ['required', 'data-parsley-trigger'=>'change', 'dir'=>'ltr']) }}
                 {!! $errors->first('date','<span>:message</span>') !!}
             </div>
 

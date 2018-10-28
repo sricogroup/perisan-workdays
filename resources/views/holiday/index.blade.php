@@ -19,7 +19,7 @@
 
                     <td>{{($holidays->currentPage() - 1 ) * ($holidays->perPage() ) + $loop->iteration}}</td>
                     <td>{!! $item->title !!}</td>
-                    <td>{!! $item->date !!}</td>
+                    <td>{!! $item->vertaDate !!}</td>
                     <td>
                         <a href="" data-toggle="control-sidebar" class="gearIcon"><i class="fa fa-cog"
                                                                                      aria-hidden="true"></i></a>
