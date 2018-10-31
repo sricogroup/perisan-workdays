@@ -91,4 +91,29 @@ class PWorkdays
     }
 
 
+    public static function getDays($count = 4, $from = null)
+    {
+        $from = self::now($from);
+        ini_set('max_execution_time', 3000);
+        $holidays = self::getHolidays();
+        $x = 0;
+        $firstEndOfWeek = self::getWeekend();
+        $endEndOfWeek = self::getWeekend(1);
+        $array = [];
+        for ($i = 1; $i <= 20; $i++) {
+            if ($x < $count) {
+                $dt = Carbon::parse($from)->addDays($i);
+                if (!$dt->$firstEndOfWeek() && !$dt->$endEndOfWeek()) {
+                    if (!\in_array($dt->toDateString(), $holidays)) {
+                        $array[$x] = \verta($dt)->formatDate();
+                        $x++;
+                    }
+                }
+            }
+        }
+
+        return $array;
+
+    }
+
 }
